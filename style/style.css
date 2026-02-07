@@ -5,16 +5,19 @@ body {
     background-size: 790px 697px;
     background-attachment: scroll;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', Arial, sans-serif;
 }
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .title {
     font-size: 70px;
     font-weight: 408;
@@ -24,6 +27,7 @@ body {
     margin-bottom: 80px;
     color: #515076;
 }
+
 .list {
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +37,7 @@ body {
     list-style: none;
     padding-bottom: 50px;
 }
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -42,6 +47,7 @@ body {
     background-color: #F7F7FA;
     box-shadow: 2px 2px 10px 0px rgba(81, 80, 118, 0.1);
 }
+
 .card-container img {
     display: block;
     width: 100%;
@@ -49,6 +55,7 @@ body {
     object-fit: contain;
     margin-bottom: 20px;
 }
+
 .product-category {
     font-size: 12px;
     line-height: 24px;
@@ -56,34 +63,41 @@ body {
     color: #A5A3B9;
     margin-bottom: 5px;
 }
+
 .product-name {
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
     margin-bottom: 5px;
 }
+
 .product-description {
     font-size: 14px;
     line-height: 1.4;
     margin-bottom: 15px;
 }
+
 .product-compound-container {
     margin-top: auto;
 }
+
 .product-compound-container span {
     display: block;
     font-weight: 700;
     margin-bottom: 5px;
 }
+
 .product-compound {
     list-style: circle;
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
 .product-compound-item {
     font-size: 13px;
     margin-bottom: 3px;
 }
+
 .product-price-container {
     display: flex;
     justify-content: space-between;
@@ -91,9 +105,11 @@ body {
     padding-top: 15px;
     border-top: none;
 }
+
 .product-price-label {
     font-weight: 700;
 }
+
 .product-price {
     font-size: 20px;
     font-weight: 400;
