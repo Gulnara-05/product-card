@@ -128,10 +128,9 @@ body {
   cursor: pointer;
   transition: 0.3s;
   margin-top: 10px;
-  }
+}
 
-.action-button.active {
-  background-color: red !important;
-  color: #ffffff;
-  border-color: #b30000;
+body.active {
+  background-color: #222;
+  color: #ffff;
 }
