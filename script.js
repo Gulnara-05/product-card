@@ -1,6 +1,6 @@
 
 
-const recolorFirstCardButton= document.getElementById('recolor-first-card-button');
+const recolorFirstCardButton = document.getElementById('recolor-first-card-button');
 const firstCatalogCard = document.querySelector('.card-container')
 const blueHashColor = "#0000FF";
 
@@ -29,15 +29,15 @@ function openGoogle() {
     window.open('https://google.com');
   } else {
     console.log('Пользователь отменил переход на Google');
-  } 
+  }
 }
 
-  const mainTitle = document.querySelector(' title');
-  mainTitle.addEventListener('mouseover', () => {
-  console.log(mainTitle);
+const mainTitle = document.querySelector(' title');
+mainTitle.addEventListener('mouseover', () => {
+  console.log(mainTitle.textContent);
 });
 
-  const toggleBtn = document.getElementById('theme-toggle-button');
-  toggleBtn,addEventListener('click', () => {
-  toggleBtn.classList.toggle('active');
+const toggleBtn = document.getElementById('theme-toggle-button');
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('active');
 });
