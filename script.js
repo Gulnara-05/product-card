@@ -37,7 +37,7 @@ mainTitle.addEventListener('mouseover', () => {
   console.log(mainTitle.textContent);
 });
 
-const toggleBtn = document.getElementById('theme-toggle-button');
+const toggleBtn = document.getElementById('recolor-button');
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('active');
 });
