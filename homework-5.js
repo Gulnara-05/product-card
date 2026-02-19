@@ -5,12 +5,12 @@ function showTemperature(city,temperature) {
 showTemperature("Мадриде", 18);
 showTemperature("Барселоне", 22);
 
-const lightSpeed = 299792458;
+const LIGHT_SPEED = 299792458;
 function checkSpeed(speed) {
-  if (speed > lightSpeed) {
+  if (speed > LIGHT_SPEED) {
     console.log("Сверхсветовая скорость");
   }
-  else if (speed < lightSpeed) {
+  else if (speed < LIGHT_SPEED) {
     console.log("Субсветовая скорость");
   }
   else {
@@ -23,7 +23,7 @@ let product = "Ноутбук";
 let productPrice = 900;
 let balanceNeeded;
 function buyProduct(budget) {
-  if (budget>= productPrice) {
+  if (budget >= productPrice) {
     console.log(`${product} приобретен.Спасибо за покупку`);
   }
   else {
