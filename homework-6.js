@@ -20,6 +20,7 @@ const myCar = {
   transmission: "PDK",
   interior: "Leather Chalk",
 };
+
 myCar.owner = person;
 console.log("Моя машина:", myCar);
 
@@ -43,19 +44,31 @@ console.log("(Продукты):", products);
 
 const myMovies = [
   {
-   title: "Побег из Шоушенка", year: 2011,
+   title: "Побег из Шоушенка",
+   year: 2011,
   },
   {
-   title: "По соображением совести", year: 2016,
+   title: "По соображением совести",
+   year: 2016,
   },
   {
-   title: "Кровавый алмаз", year: 2006,
+   title: "Кровавый алмаз", 
+   year: 2006,
   },
 ];
-myMovies.push({ title: "Зелёная миля", year: 1999,});
+
+myMovies.push({ 
+   title: "Зелёная миля", 
+   year: 1999,
+  });
 console.log("Фильмы:", myMovies);
 
-const extraFilm = [{title: "Оппенгеймер", year: 2023,}];
+const extraFilm = [
+  {
+   title: "Оппенгеймер",
+   year: 2023,
+  },
+];
 const allFilms = [...myMovies, ...extraFilm];
 console.log("Все фильмы вместе:", allFilms);
 
