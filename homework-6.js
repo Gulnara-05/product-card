@@ -60,7 +60,7 @@ const myMovies = [
 myMovies.push({ 
    title: "Зелёная миля", 
    year: 1999,
-  });
+});
 console.log("Фильмы:", myMovies);
 
 const extraFilm = [
