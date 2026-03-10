@@ -16,17 +16,17 @@ console.log('Уровень 1.4(наоборот):', reverseArray(kitchenApplian
 const comEmails = socialComments.filter(comment => comment.email.includes('.com'));
 console.log('7. Автолюбители .com:', comEmails);
 
-const updatedPosts = socialComments.map(comment => ({
+const updatedCommentPosts = socialComments.map(comment => ({
     ...comment,
     postId: comment.id <= 5 ? 2 : 1
 }));
-console.log('8. Обновленные postId:', updatedPosts);
+console.log('8. Обновленные postId:', updatedCommentPosts);
 
-const simpleList = socialComments.map(comment => ({
+const commentNames = socialComments.map(comment => ({
     id: comment.id,
     name: comment.name
 }));
-console.log('9. Краткий список имен:', simpleList);
+console.log('9. Краткий список имен:', commentNames);
 
 const validatedComments = socialComments.map(comment => ({
     ...comment,
