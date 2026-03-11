@@ -37,4 +37,4 @@ console.log('10. Проверка длины постов:', validatedComments);
 const emailsAll = socialComments.map(c => c.email);
 console.log('11. Список всех почт:', emailsAll);
 
-console.log('12. Все почты одной строкой:', emailsAll.join(','));
+console.log('12. Все почты одной строкой:', emailsAll.join(',')); ''
