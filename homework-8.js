@@ -41,5 +41,6 @@ function renderCards(dataArray) {
 }
 
 const count = getCardsCount(); 
-const itemsToRender = products.slice(0,count);
+const itemsToRender = products.slice(0, count);
+
 renderCards(itemsToRender);

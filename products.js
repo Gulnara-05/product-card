@@ -5,7 +5,7 @@ export const products = [
         title: "Увлажняющий мусс",
         description: "Глубоко увлажняет кожу лица, оставляя её мягкой и гладкой.",
         composition: [
-            "активные натуральные комплексы", 
+            "активные натуральные комплексы",
             "витамины С, А, РР, В и Е",
             "солнцезащитные компоненты",
         ],
@@ -20,8 +20,8 @@ export const products = [
         title: "Увлажняющая маска",
         description: "Способствует удерживанию влаги в верхних слоях кожи.",
         composition: [
-            "воски", 
-            "минералы", 
+            "воски",
+            "минералы",
             "масла",
         ],
         price: 3500,
@@ -41,7 +41,7 @@ export const products = [
         ],
         price: 1650,
         currency: "₽;",
-        image: "cleansing-gel", 
+        image: "cleansing-gel",
     },
 
     {
@@ -51,7 +51,7 @@ export const products = [
         description: "Набор,состоящий из увлажняющего крема и маски.",
         composition: [
             "воски",
-            "минералы", 
+            "минералы",
             "масла",
         ],
         price: 4750,
@@ -65,13 +65,12 @@ export const products = [
         title: "Подарочный набор -5",
         description: "Весь набор средств Invisible symphony крем,маска,мусс и гель для умывания.",
         composition: [
-            "воски", 
-            "минералы", 
+            "воски",
+            "минералы",
             "масла",
         ],
         price: 7520,
         currency: "₽;",
-        image: "gift-set-5", 
+        image: "gift-set-5",
     },
-    ]
-    
+]
