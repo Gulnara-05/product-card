@@ -1,6 +1,5 @@
-import { products } from './data.js';
+import { products } from './products.js';
 
-// 1. Описания
 const productDescriptions = products.reduce((acc, item) => {
     acc.push({ [item.title]: item.description });
     return acc;
@@ -24,16 +23,16 @@ function renderCards(dataArray) {
     dataArray.forEach(product => {
         const clone = template.content.cloneNode(true);
         
-        clone.querySelector('.product-image').src = `images/${product.image}`;
+        clone.querySelector('.product-image').src = `images/${product.image}.png`;
         clone.querySelector('.category').textContent = product.category;
         clone.querySelector('.product-title').textContent = product.title;
         clone.querySelector('.desc').textContent = product.description;
         clone.querySelector('.price-value').innerHTML = `${product.price} ${product.currency}`;
         
         const list = clone.querySelector('.composition-list');
-        product.composition.forEach(ing => {
+        product.composition.forEach(ingredient => {
             const li = document.createElement('li');
-            li.textContent = ing;
+            li.textContent = ingredient;
             list.appendChild(li);
         });
 

@@ -10,8 +10,8 @@ export const products = [
             "солнцезащитные компоненты",
         ],
         price: 2750,
-        currency: "&#8381;",
-        image: "moisturizing-mousse.png"
+        currency: "₽;",
+        image: "moisturizing-mousse",
     },
 
     {
@@ -25,8 +25,8 @@ export const products = [
             "масла",
         ],
         price: 3500,
-        currency: "&#8381;",
-        image: "moisturizing-mask.png"
+        currency: "₽;",
+        image: "moisturizing-mask",
     },
 
     {
@@ -40,8 +40,8 @@ export const products = [
             "солнцезащитные компоненты",
         ],
         price: 1650,
-        currency: "&#8381;",
-        image: "cleansing-gel.png" 
+        currency: "₽;",
+        image: "cleansing-gel", 
     },
 
     {
@@ -55,8 +55,8 @@ export const products = [
             "масла",
         ],
         price: 4750,
-        currency: "&#8381;",
-        image: "gift-set-1.png"
+        currency: "₽;",
+        image: "gift-set-1",
     },
 
     {
@@ -70,7 +70,8 @@ export const products = [
             "масла",
         ],
         price: 7520,
-        currency: "&#8381;",
-        image: "gift-set-5.png" 
+        currency: "₽;",
+        image: "gift-set-5", 
     },
     ]
+    
