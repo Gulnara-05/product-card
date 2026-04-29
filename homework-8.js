@@ -15,10 +15,10 @@ function getCardsCount() {
 
 function renderCards(dataArray) {
     console.log("Данные:", dataArray);
-    const listContainer = document.querySelector('.list');
+    const productListContainer = document.querySelector('.list');
     const template = document.querySelector('#product-template');
     
-    listContainer.innerHTML = ''; 
+    productListContainer.innerHTML = ''; 
 
     dataArray.forEach(product => {
         const clone = template.content.cloneNode(true);
@@ -36,7 +36,7 @@ function renderCards(dataArray) {
             list.appendChild(li);
         });
 
-        listContainer.appendChild(clone);
+        productListContainer.appendChild(clone);
     });
 }
 
