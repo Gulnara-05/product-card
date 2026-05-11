@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
   <template id="product-template">
     <div class="product-card">
@@ -34,10 +35,58 @@
     <button id="recolor-all-card-button">Перекрасить фон всех карточек</button>
     <button id="open-google-button">Открыть Google</button>
     <button id="recolor-button" class="action-button">Сменить цвет</button>
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer-form-container">
+        <h3>Подпишитесь</h3>
+        <form id="subscribeForm">
+          <label for="footer-email">Email:</label>
+          <input type="email" id="footer-email" name="email" placeholder="example@mail.com" required>
+          <button type="submit">Подписаться</button>
+        </form>
+      </div>
+    </footer>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="regModal" class="modal">
+      <button class="close-modal" id="closeModalBtn">&times;</button>
+      <h2>Регистрация</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label>Имя: <input type="text" name="firstName" placeholder="Имя" required></label>
+        </div>
+        <div class="form-group">
+          <label>Фамилия: <input type="text" name="lastName" placeholder="Фамилия" required></label>
+        </div>
+        <div class="form-group">
+          <label>Дата рождения: <input type="date" name="birthDate" required></label>
+        </div>
+        <div class="form-group">
+          <label>Логин: <input type="text" name="login" placeholder="login" required></label>
+        </div>
+        <div class="form-group">
+          <label>Пароль: <input type="password" id="pass" name="password" placeholder="**" required></label>
+        </div>
+        <div class="form-group">
+          <label>Повтор пароля: <input type="password" id="confirmPass" name="confirmPassword" placeholder="**"
+              required></label>
+        </div>
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+    <script src="./homework-9.js"></script>
     <script src="./script.js"></script>
     <script src="./homework-5.js"></script>
     <script src="./homework-6.js"></script>
     <script src="./homework-7.js" type="module"></script>
     <script src="./homework-8.js" type="module"></script>
+    <script src="./homework-9.js" type="modul"></script>
 </body>
+
 </html>
