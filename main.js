@@ -45,3 +45,15 @@ if (subscribeForm.form) {
         }
     });
 }
+
+import { Coffee, Tea } from './drinks.js';
+import { Cafe } from './cafe.js';
+
+const myCafe = new Cafe("Красота  и Кофе", "ул. Баумана, 34");
+
+const espresso = new Coffee("Эспрессо", "Маленький", 150, 20, "Арабика");
+const blackTea = new Tea("Черный чай", "Средний", 100, 25, "Цейлонский");
+
+myCafe.showWelcome();
+myCafe.order(espresso);
+myCafe.order(blackTea);
