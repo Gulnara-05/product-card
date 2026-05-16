@@ -1,7 +1,10 @@
 export class Drink {
-    #temperature; 
+    #temperature;
 
     constructor(name, size, price, temperature) {
+        if (new.target === Drink) {
+            throw new Error("Cannot instantiate abstract class Drink directly");
+        }
         this.name = name;
         this.size = size;
         this.price = price;
