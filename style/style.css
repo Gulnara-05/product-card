@@ -288,3 +288,45 @@ body.active {
 .modal button[type="submit"]:hover {
     background: #218838;
 }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+.modal.modal-showed {
+  display: block;
+}
+
+.overlay.overlay-showed {
+  display: block;
+}

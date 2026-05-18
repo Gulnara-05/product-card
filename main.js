@@ -1,5 +1,5 @@
 import './cosmetics.js';
-import Modal from './modal.js';
+import { Modal } from './homework-12.js/modal.js';
 import Form from './form.js';
 const registrationModal = new Modal('regModal');
 const registrationForm = new Form('registrationForm');
@@ -57,3 +57,7 @@ const blackTea = new Tea("Черный чай", "Средний", 100, 25, "Це
 myCafe.showWelcome();
 myCafe.order(espresso);
 myCafe.order(blackTea);
+
+const regModal = new Modal('regModal', 'overlay');
+regModal.initOpen('openModalBtn');
+regModal.initClose();
