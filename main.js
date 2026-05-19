@@ -1,7 +1,6 @@
 import './cosmetics.js';
 import { Modal } from './homework-12.js/modal.js';
 import Form from './form.js';
-const registrationModal = new Modal('regModal');
 const registrationForm = new Form('registrationForm');
 const subscribeForm = new Form('subscribeForm');
 
@@ -9,7 +8,7 @@ const openBtn = document.getElementById('openModalBtn');
 
 if (openBtn) {
     openBtn.addEventListener('click', () => {
-        registrationModal.open();
+        regModal.open();
     });
 }
 
@@ -59,5 +58,4 @@ myCafe.order(espresso);
 myCafe.order(blackTea);
 
 const regModal = new Modal('regModal', 'overlay');
-regModal.initOpen('openModalBtn');
 regModal.initClose();
