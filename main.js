@@ -26,7 +26,7 @@ if (registrationForm.form) {
         if (registrationForm.isValid()) {
             console.log('Данные формы:', values);
             registrationForm.reset();
-            registrationModal.close();
+            regModal.close();
             alert('Вы успешно зарегистрировались!');
         } else {
             alert('Пожалуйста, заполните все поля корректно.');
