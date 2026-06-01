@@ -19,16 +19,24 @@ function init() {
 function loadFamilyFromServer() {
     if (statusMessage) statusMessage.innerHTML = '<p style="text-align:center;">Данные загружаются...</p>';
     if (container) container.innerHTML = ''; 
-    const myFamily = [
-        { "id": 1, "name": "Папа", "relation": "Отец", "hobby": "Рыбалка", "age": 45 },
-        { "id": 2, "name": "Мама", "relation": "Мать", "hobby": "Рисование", "age": 42 },
-        { "id": 3, "name": "Игорь", "relation": "Брат", "hobby": "Футбол", "age": 14 }
-    ];
 
     setTimeout(() => {
-        if (statusMessage) statusMessage.innerHTML = '';
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(myFamily));
-        renderFamily(myFamily);
+        fetch('users.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Ой! Файл с семьей не найден!');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (statusMessage) statusMessage.innerHTML = '';
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+                renderFamily(data);
+            })
+            .catch(error => {
+                if (statusMessage) statusMessage.innerHTML = '<p style="color:red;">Ошибка при загрузке данных о семье!</p>';
+                console.error(error);
+            });
     }, 2000); 
 }
 
